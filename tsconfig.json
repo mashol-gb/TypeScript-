@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    /* 1. تنظيم المجلدات والملفات (File Layout) */
+    "rootDir": "./src",                        /* مجلد الكود المصدري */
+    "outDir": "./dist",                        /* مجلد المخرجات المجمعة */
+
+    /* 2. البيئة والمستهدف (Environment Settings) */
+    "target": "ES2022",                        /* إصدار JavaScript المستهدف */
+    "module": "NodeNext",                      /* نظام الموديولات لـ Node.js */
+    "moduleResolution": "NodeNext",            /* طريقة البحث عن المكتبات */
+    "lib": ["ES2022"],                         /* المكتبات الافتراضية المتاحة */
+    "types": ["node"],                         /* إتاحة أنواع Node.js */
+
+    /* 3. خيارات التصحيح وإخراج الملفات (Outputs & Debugging) */
+    "sourceMap": true,                         /* ربط الكود بالملف الأصلي للتصحيح */
+    "declaration": true,                       /* إنشاء ملفات .d.ts للأنواع */
+    "declarationMap": true,                    /* ربط ملفات Types بالـ Source Maps */
+    "removeComments": true,                    /* حذف التعليقات لتقليل حجم الملفات */
+
+    /* 4. الفحص الصارم للأنواع (Strict Type-Checking) */
+    "strict": true,                            /* تفعيل قيود الفحص الصارم */
+    "noImplicitAny": false,                     /* يمنع ترك المتغيرات بدون تحديد نوعها */
+    "strictNullChecks": true,                  /* حماية من أخطاء null و undefined */
+    "noUncheckedIndexedAccess": true,          /* التعامل الآمن مع المصفوفات */
+    "exactOptionalPropertyTypes": true,        /* فحص دقيق للخصائص الاختيارية */
+
+    /* 5. جودة الكود والتنظيف (Code Quality) */
+    "noUnusedLocals": true,                    /* التنبيه على المتغيرات غير المستعملة */
+    "noUnusedParameters": true,                /* التنبيه على المعاملات غير المستعملة */
+    "noImplicitReturns": true,                 /* ضمان إرجاع قيم من الدوال */
+    "noFallthroughCasesInSwitch": true,        /* حماية عبارات switch */
+
+    /* 6. التوافق والسرعة (Advanced & Speed) */
+    "esModuleInterop": true,                   /* دعم استيراد مكتبات CommonJS */
+    "forceConsistentCasingInFileNames": true,   /* مطابقة حالة الأحرف في الملفات */
+    "isolatedModules": true,                   /* تجميع كل ملف بشكل منفصل */
+    "skipLibCheck": true                       /* تسريع التجميع بتجاهل فحص المكتبات الخارجية */
+  },
+  
+  /* 7. النطاق المشمول والمستثنى لسرعة الأداء */
+  "include": ["src/**/*", "test.js"],                     /* قراءة الملفات داخل src فقط */
+  "exclude": ["node_modules", "dist"]          /* التجاهل لتقليل استهلاك المعالج */
+}
