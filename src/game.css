@@ -1,0 +1,60 @@
+body{
+  background: linear-gradient(135deg, #b68e18, #c70fb1);
+  min-height: 100vh;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.clock-container{
+  background: rgba(96, 8, 8, 0.05);
+  padding: 30px 50px;
+  border-radius: 20px;
+  box-shadow: 10px 20px 35px 10px rgba(173, 39, 39, 0.5);
+  backdrop-filter: blur(10px);
+  border: 4px solid rgba(255, 255, 255, 0.1);
+}
+
+.clock{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 3,5rem;
+  color: #00f2f0;
+   box-shadow: 10px 20px 35px 10px rgba(173, 39, 39, 0.5);
+  backdrop-filter: blur(10px);
+  letter-spacing: 3px;
+  
+
+}
+
+  #second, #minuts, #hours, #mini-second{
+    
+    padding: 30px;
+    border-radius:220px 0 220px 92px;
+  font-size: 1.5rem;
+  background: linear-gradient(red , yellow);
+  color: #095757;
+  box-shadow: 20px 10px  80px 30px whitesmoke;
+  margin-left: 10px; 
+  font-weight: bold;
+}
+
+#ampm {
+  font-size: 1.5rem;
+  color: #e95da3;
+  margin-left: 6px; 
+  font-weight: bold;
+}
+
+#pointer{
+   font-size: 1.5rem;
+  color: #e95da3;
+  margin-left: 6px; 
+  font-weight: bold;
+}
